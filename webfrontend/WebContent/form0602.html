@@ -120,10 +120,13 @@ legend {
 
 </head>
 <body>
+<p id="show"></p>
+<button onclick="document.getElementById('show').innerHTML=Date()">지금 몇시죠?</button>
 	<form method="post" action="server.jsp" id="registerform"
 		enctype="multipart/form-data">
 		<h2 align="center">회원가입</h2>
 		<ul>
+		
 			<!-- 한 줄 글상자 -->
 			<li><label for="email">이메일</label> <input type="text"
 				id="email" name="email" class="textinput" placeholder="이메일을 입력하세요" /> <input type="button"
