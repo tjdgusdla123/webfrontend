@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>캔버스</title>
+</head>
+<body>
+	<canvas id="canvas" width="1024" height="1024"></canvas>
+</body>
+<script>
+	//canvas 태그 찾아오기
+	var canvas = document.getElementById("canvas");
+	//context 객체 찾아오기
+	var context = canvas.getContext('2d');
+	//그림 그리기
+	context.fillStyle = 'blue';//속성에 색상 적용 가능
+	context.globalAlpha = 0.5;//투명도는 globalAlpha 속성으로 설정 가능 : 0.0~1.0 사이 가능 
+	context.fillRect(0, 0, 300, 300)//내부가 채워진 사각형 그리기
+	context.strokeStyle = '#ff00ff';//
+	context.strokeRect(200, 0, 300, 300)//내부가 채워지지 않은 사각형 그리기
+	context.clearRect(0, 50, 100, 100)// 사각형 만큼 지우기
+</script>
+</html>
