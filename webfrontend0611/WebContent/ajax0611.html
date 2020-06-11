@@ -6,15 +6,11 @@
 </head>
 <body>
 	<h2>ajax 요청</h2>
-	<input type="button" value="텍스트파일읽기"
-	id="ajaxbtn" />
+	<input type="button" value="텍스트파일읽기" id="ajaxbtn" />
 	<form id="myform">
-		이메일<input type="email"
-		name="email" id="email" /><br/>
-		이름<input type="text"
-		name="name" id="name" /><br/>
-		<input type="button"
-		value="폼 전송 ajax" id="ajaxform"/>
+		이메일<input type="email" name="email" id="email" /><br /> 이름<input
+			type="text" name="name" id="name" /><br /> <input type="button"
+			value="폼 전송 ajax" id="ajaxform" />
 	</form>
 	<div id="disp"></div>
 </body>
@@ -39,12 +35,10 @@
 		formdata.append("age", 28);
 		//요청을 생성
 		var request = new XMLHttpRequest();
-		request.open(
-			'POST', 'resource/process.jsp');
+		request.open('POST', 'resource/process.jsp');
 		request.send(formdata);
 		//응답을 처리
-		request.addEventListener(
-			'load',function(event){
+		request.addEventListener('load',function(event){
 			disp.innerHTML = 
 				event.target.responseText;		
 		});
