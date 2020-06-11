@@ -2,7 +2,7 @@
     <wb-module deploy-name="webfrontend0611">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="webfrontend0611"/>
         <property name="java-output-path" value="/webfrontend0611/build/classes"/>
+        <property name="context-root" value="webfrontend0611"/>
     </wb-module>
 </project-modules>
